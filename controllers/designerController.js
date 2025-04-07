@@ -107,7 +107,6 @@ class DesignerController {
 
   profile = (req, res) => {
     const { id } = req.params;
-    console.log('ID recibido:', id);
 
     let sql = `SELECT d.*, des.design_id, des.design_name, des.orientation, des.main_fabric, des.main_color, des.garment_type, des.design_img 
            FROM designer d 
