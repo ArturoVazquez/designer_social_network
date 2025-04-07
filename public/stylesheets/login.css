@@ -1,4 +1,4 @@
-.form { /* fondo blanco y no puede ser mas ancho de 350px con sombra suave efecto card */
+.form { 
   background-color: #f1f7fe;
   display: block;
   padding: 1rem;
@@ -7,7 +7,7 @@
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-.form-title { /* centrar y mas visible */
+.form-title { 
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -54,7 +54,7 @@
 .submit:hover {
   background-color: #005ce6;
 }
-/* texto pequeño al final y subrayado */
+
 .signup-link {
   color: #6B7280;
   font-size: 0.875rem;
