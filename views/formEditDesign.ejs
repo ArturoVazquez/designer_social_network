@@ -11,7 +11,7 @@
     <%- include('modules/navbar.ejs') %>
     <main>
       <section class="section-1 py-5">
-        <div class="container contform py-5">
+        <div class="container-xxl d-flex flex-column align-items-center justify-content-center text-center py-5">
           <div class="form_area">
             <p class="title">EDIT DESIGN</p>
             <form
@@ -19,87 +19,93 @@
               method="post"
               enctype="multipart/form-data"
             >
-              <div class="form_group">
-                <label class="sub_title" for="design_name">Name</label>
-                <input
-                  placeholder="Enter your full name"
-                  class="form_style"
-                  type="text"
-                  name="design_name"
-                  id="design_name"
-                  value="<%= result.design_name  %>"
-                />
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form_group">
+                    <label class="sub_title" for="design_name">Name</label>
+                    <input
+                      placeholder="Enter your full name"
+                      class="form_style"
+                      type="text"
+                      name="design_name"
+                      id="design_name"
+                      value="<%= result.design_name  %>"
+                    />
+                  </div>
+                  <div class="form_group">
+                    <label class="sub_title" for="orientation">Orientation</label>
+                    <input
+                      placeholder="Enter orientation"
+                      id="orientation"
+                      class="form_style"
+                      type="text"
+                      name="orientation"
+                      value="<%= result.orientation  %>"
+                    />
+                  </div>
+                  <div class="form_group">
+                    <label class="sub_title" for="main_fabric">Main fabric</label>
+                    <input
+                      placeholder="Enter main fabric"
+                      id="main_fabric"
+                      class="form_style"
+                      type="text"
+                      name="main_fabric"
+                      value="<%= result.main_fabric  %>"
+                    />
+                  </div>
+                  <div class="form_group">
+                    <label class="sub_title" for="main_color">Main color</label>
+                    <input
+                      placeholder="Enter main color"
+                      id="main_color"
+                      class="form_style"
+                      type="text"
+                      name="main_color"
+                      value="<%= result.main_color  %>"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form_group">
+                    <label class="sub_title" for="garment_type">Garment type</label>
+                    <input
+                      placeholder="Enter main color"
+                      id="garment_type"
+                      class="form_style"
+                      type="text"
+                      name="garment_type"
+                      value="<%= result.garment_type  %>"
+                    />
+                  </div>
+                  <div class="form_group">
+                    <label class="sub_title" for="design_description">Description</label>
+                    <input
+                      placeholder="Enter main color"
+                      id="design_description"
+                      class="form_style"
+                      type="text"
+                      name="design_description"
+                      value="<%= result.design_description  %>"
+                    />
+                  </div>
+                  <div class="form_group">
+                    <label class="sub_title">Change Image</label>
+                    <input id="img" class="form_style" type="file" name="img" />
+                  </div>
+                  <div>
+                    <button class="btnADD submit">EDIT DESIGN</button>
+                  </p>
+                </div>
               </div>
-              <div class="form_group">
-                <label class="sub_title" for="orientation">Orientation</label>
-                <input
-                  placeholder="Enter orientation"
-                  id="orientation"
-                  class="form_style"
-                  type="text"
-                  name="orientation"
-                  value="<%= result.orientation  %>"
-                />
-              </div>
-              <div class="form_group">
-                <label class="sub_title" for="main_fabric">Main fabric</label>
-                <input
-                  placeholder="Enter main fabric"
-                  id="main_fabric"
-                  class="form_style"
-                  type="text"
-                  name="main_fabric"
-                  value="<%= result.main_fabric  %>"
-                />
-              </div>
-              <div class="form_group">
-                <label class="sub_title" for="main_color">Main color</label>
-                <input
-                  placeholder="Enter main color"
-                  id="main_color"
-                  class="form_style"
-                  type="text"
-                  name="main_color"
-                  value="<%= result.main_color  %>"
-                />
-              </div>
-              <div class="form_group">
-                <label class="sub_title" for="garment_type">Garment type</label>
-                <input
-                  placeholder="Enter main color"
-                  id="garment_type"
-                  class="form_style"
-                  type="text"
-                  name="garment_type"
-                  value="<%= result.garment_type  %>"
-                />
-              </div>
-              <div class="form_group">
-                <label class="sub_title" for="design_description">Description</label>
-                <input
-                  placeholder="Enter main color"
-                  id="design_description"
-                  class="form_style"
-                  type="text"
-                  name="design_description"
-                  value="<%= result.design_description  %>"
-                />
-              </div>
-              <div class="form_group">
-                <label class="sub_title">Change Image</label>
-                <input id="img" class="form_style" type="file" name="img" />
-              </div>
-              <div>
-                <button class="btnADD submit">EDIT DESIGN</button>
-                <p>
-                  Do you want to cancel?
-                  <a
-                    class="link"
-                    href="/designer/designerProfile/<%= result.designer_id %>"
-                    >Cancel!</a
-                  >
-                </p>
-              </div>
+            </div>
+            <p>
+              Do you want to cancel?
+              <a
+                class="link"
+                href="/designer/designerProfile/<%= result.designer_id %>"
+                >Cancel!</a
+              >
             </form>
           </div>
         </div>

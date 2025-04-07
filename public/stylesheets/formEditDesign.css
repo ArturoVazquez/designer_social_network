@@ -1,9 +1,6 @@
-.contform {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+main {
+  margin-top: 5rem;
+  min-height: calc(100vh - 214px);
 }
 
 .form_area {
@@ -11,12 +8,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #eddcd9;
+  background-color:#e0e0e0;
   height: auto;
   width: auto;
   border: 2px solid #264143;
   border-radius: 20px;
-  box-shadow: 3px 4px 0px 1px #e99f4c;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
 }
 
 .title {
@@ -41,17 +38,17 @@
 .form_style {
   outline: none;
   border: 2px solid #264143;
-  box-shadow: 3px 4px 0px 1px #e99f4c;
-  width: 290px; /* Modificar tamaño!!! */
+  box-shadow: 15px 15px 30px #bebebe;
+  width: 290px; 
   padding: 12px 10px;
   border-radius: 4px;
   font-size: 15px;
 }
 
 .form_style:focus,
-.btn:focus {
+.btnADD:focus {
   transform: translateY(4px);
-  box-shadow: 1px 2px 0px 0px #e99f4c;
+  box-shadow: 1px 2px 0px 0px darkblue;
 }
 
 .btnADD {
@@ -63,11 +60,11 @@
   background: #0a4275;
   border-radius: 10px;
   font-weight: 800;
-  box-shadow: 3px 3px 0px 0px #08355e;
 }
 
 .btnADD:hover {
-  opacity: 0.9;
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 .link {
