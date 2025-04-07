@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DesignersList</title>
+    <link rel="stylesheet" href="/stylesheets/designerList.css" />
+    <%- include('modules/links.ejs') %>
+  </head>
+  <body>
+    <%- include('modules/navbar.ejs') %>
+    <main>
+      <section class="py-5">
+        <div class="container-xxl py-5">
+          <div class="row rowgap1 row-gap-5 justify-content-center align-items-center">
+            <% result.forEach((elem)=>{ %>
+            <div
+              class="col-12 col-sm-6 col-xl-3 d-flex flex-column justify-content-center align-items-center"
+            >
+              <div class="designer-card text-center">
+                <img
+                  onclick="window.location.href='/designer/userViewDesigner/<%= elem.designer_id %>'"
+                  src="/images/designers/<%= elem.designer_img ? elem.designer_img : 'default.jpg' %>"
+                  class="designer-card-img"
+                  alt="Imagen del diseñador"
+                />
+                <div class="designer-card-body">
+                  <h5 class="designer-card-title mt-3">
+                    <%= `${elem.designer_name} ${elem.lastname}` %>
+                  </h5>
+                  <p class="designer-card-text"><%= elem.city %></p>
+                </div>
+              </div>
+            </div>
+            <% }) %>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('modules/footer.ejs') %>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

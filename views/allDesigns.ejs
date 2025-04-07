@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="/stylesheets/allDesigns.css">
+    <%- include('modules/links.ejs') %>
+  </head>
+  <body>
+   <%- include('modules/navbar.ejs') %>
+    <main>
+      <section class="section-1 py-5">
+        <div class="container-xxl py-5">
+          <div class="row row-gap-4 justify-content-center align-items-center">
+            <% result.forEach((elem)=>{ %>
+                <div class="col-12 col-sm-6 col-xl-3 d-flex flex-column justify-content-center align-items-center">
+                  <div class="card text-center">
+                      <img onclick="window.location.href='/design/designProfileUser/<%= elem.design_id %>'" src="/images/designs/<%= elem.design_img?elem.design_img:'default.jpg'%>" class="card-img-top" alt="Imagen del diseño">
+                      <div class="card-body">
+                        <h5 class="card-title"><%= elem.design_name %></h5>
+                      </div>
+                    </div>
+                </div>
+            <% }) %>
+    
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <%- include('modules/footer.ejs') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
+  </body>
+</html>

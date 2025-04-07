@@ -1,0 +1,20 @@
+html {
+  scrollbar-color: #0a4275 black;
+}
+@supports not (scrollbar-color: #0a4275 black) {
+  html ::-webkit-scrollbar {
+    width: 0.75rem;
+  }
+  html ::-webkit-scrollbar-track {
+    background-color: black;
+  }
+  html ::-webkit-scrollbar-thumb {
+    background-color: rgb(149, 255, 0);
+    border: 1px solid #000;
+    border-radius: 1rem;
+  }
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+}

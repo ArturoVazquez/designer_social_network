@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FormEditDesign</title>
+    <link rel="stylesheet" href="/stylesheets/formEditDesign.css" />
+    <%- include('modules/links.ejs') %>
+  </head>
+  <body>
+    <%- include('modules/navbar.ejs') %>
+    <main>
+      <section class="section-1 py-5">
+        <div class="container contform py-5">
+          <div class="form_area">
+            <p class="title">EDIT DESIGN</p>
+            <form
+              action="/design/editDesigns/<%= result.design_id %>/<%= result.designer_id %>"
+              method="post"
+              enctype="multipart/form-data"
+            >
+              <div class="form_group">
+                <label class="sub_title" for="design_name">Name</label>
+                <input
+                  placeholder="Enter your full name"
+                  class="form_style"
+                  type="text"
+                  name="design_name"
+                  id="design_name"
+                  value="<%= result.design_name  %>"
+                />
+              </div>
+              <div class="form_group">
+                <label class="sub_title" for="orientation">Orientation</label>
+                <input
+                  placeholder="Enter orientation"
+                  id="orientation"
+                  class="form_style"
+                  type="text"
+                  name="orientation"
+                  value="<%= result.orientation  %>"
+                />
+              </div>
+              <div class="form_group">
+                <label class="sub_title" for="main_fabric">Main fabric</label>
+                <input
+                  placeholder="Enter main fabric"
+                  id="main_fabric"
+                  class="form_style"
+                  type="text"
+                  name="main_fabric"
+                  value="<%= result.main_fabric  %>"
+                />
+              </div>
+              <div class="form_group">
+                <label class="sub_title" for="main_color">Main color</label>
+                <input
+                  placeholder="Enter main color"
+                  id="main_color"
+                  class="form_style"
+                  type="text"
+                  name="main_color"
+                  value="<%= result.main_color  %>"
+                />
+              </div>
+              <div class="form_group">
+                <label class="sub_title" for="garment_type">Garment type</label>
+                <input
+                  placeholder="Enter main color"
+                  id="garment_type"
+                  class="form_style"
+                  type="text"
+                  name="garment_type"
+                  value="<%= result.garment_type  %>"
+                />
+              </div>
+              <div class="form_group">
+                <label class="sub_title" for="text">Description</label>
+                <input
+                  placeholder="Enter main color"
+                  id="design_description"
+                  class="form_style"
+                  type="text"
+                  name="design_description"
+                  value="<%= result.design_description  %>"
+                />
+              </div>
+              <div class="form_group">
+                <label class="sub_title">Change Image</label>
+                <input id="img" class="form_style" type="file" name="img" />
+              </div>
+              <div>
+                <button class="btnADD submit">EDIT DESIGN</button>
+                <p>
+                  Do you want to cancel?
+                  <a
+                    class="link"
+                    href="/designer/designerProfile/<%= result.designer_id %>"
+                    >Cancel!</a
+                  >
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('modules/footer.ejs') %>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

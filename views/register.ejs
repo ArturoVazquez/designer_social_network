@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/stylesheets/register.css" />
+    <%- include('modules/links.ejs') %>
+  </head>
+  <body>
+    <%- include('modules/navbar.ejs') %>
+    <main>
+      <section class="section-1 py-5  d-flex justify-content-center align-items-center align-content-center">
+        <div class="container-xxl  d-flex justify-content-center align-items-center align-content-center">
+          <div class="row  d-flex justify-content-center align-items-center align-content-center">
+            <div class="col-12  d-flex justify-content-center align-items-center align-content-center">
+              <div class="form-box">
+                <form class="form" action="/designer/register" method="post">
+                  <span class="title">Sign up</span>
+                  <span class="subtitle">Create a free account with your email.</span>
+                  <div class="form-container">
+                    <input type="text" class="input" placeholder="Name" name="name" />
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Lastname"
+                      name="lastname"
+                    />
+                    <input
+                      type="email"
+                      class="input"
+                      placeholder="Email"
+                      name="email"
+                    />
+                    <input
+                      type="password"
+                      class="input"
+                      placeholder="Password"
+                      name="password"
+                    />
+                    <input
+                      type="password"
+                      class="input"
+                      placeholder="Repeat password"
+                      name="repPassword"
+                    />
+                  </div>
+                  <button type="submit">Sign up</button>
+                </form>
+                <div class="form-section">
+                  <p style="color: red">
+                    <%= typeof message != "undefined"?message:null %>
+                  </p>
+                  <p>
+                    Have an account?
+                    <a href="/designer/loginForm" type="submit">Log in</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('modules/footer.ejs') %>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Designers</title>
+    <link rel="stylesheet" href="/stylesheets/userViewDesigners.css">
+    <%- include('modules/links.ejs') %>
+  </head>
+  <body>
+   <%- include('modules/navbar.ejs') %>
+    <main>
+      <section class="section-1 py-5">
+        <div class="container-xxl py-5">
+          <div class="row designerCard align-items-center">
+            <div class="col-12 col-md-6 col1 g-0">
+                <img src="/images/designers/<%= finalResult.designer_img?finalResult.designer_img:'default.jpg'%>" class="img-fluid" alt="Imagen del diseñador">
+            </div>     
+            <div class="col-12 col-md-6 infoCol">
+              <span class="designerName d-block mb-4">
+                <%= finalResult.designer_name %> <%= finalResult.lastname %>
+              </span>
+              <span class="designerEmail d-block"><strong>Email: </strong> <%= finalResult.email %></span>
+              <span class="designerCity d-block"><strong>City: </strong> <%= finalResult.city %></span>
+              <span class="designerPhone d-block"><strong>Phone Number: </strong> <%= finalResult.phone_number %></span>
+              <span class="designerDesc d-block"><strong>Description: </strong> <%= finalResult.designer_description %></span>
+            </div>  
+          </div>
+          <div class=" text-center"><button class="btn-volver" onclick="window.location.href='/designer/list'">Go Back</button></div>
+        </div>
+      </section>
+      <!-- section 2 -->
+      <section class="section-2">
+        <div class="container-xxl text-center">
+          <h2>Design List</h2>
+          <div class="row row-gap-5 justify-content-center align-items-center">
+            <% finalResult.designs.forEach((elem)=>{ %>
+              <div
+              class="col-12 col-sm-6 col-xl-3 d-flex flex-column justify-content-center align-items-center"
+            >
+                  <div class="card g-0">
+                    <img onclick="window.location.href='/design/designProfileUser/<%= elem.design_id %>'" src="/images/designs/<%= elem.design_img?elem.design_img:'default.jpg'%>" class="card-img-top" alt="foto diseño">
+                    <div class="card-body">
+                      <h5 class="card-title"><%= elem.design_name %></h5>
+                    </div>
+                  </div>
+                </div>
+                <% }) %>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <%- include('modules/footer.ejs') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
+  </body>
+</html>

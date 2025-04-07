@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/stylesheets/login.css" />
+    <%- include('modules/links.ejs') %>
+  </head>
+  <body>
+    <%- include('modules/navbar.ejs') %>
+    <main>
+      <section class="section-1 py-5 d-flex justify-content-center align-items-center align-content-center">
+        <div class="container-xxl py-5">
+          <div class="row d-flex justify-content-center align-items-center align-content-center">
+            <div class="col-12 d-flex justify-content-center align-items-center align-content-center">
+              <form class="form d-flex flex-column align-content-center align-items-center" action="/designer/login" method="post">
+                <p class="form-title">Sign in to your account</p>
+                <div class="input-container">
+                  <input type="email" placeholder="Enter email" name="email" />
+                  <span> </span>
+                </div>
+                <div class="input-container">
+                  <input
+                    type="password"
+                    placeholder="Enter password"
+                    name="password"
+                  />
+                </div>
+                <p style="color: red">
+                  <%= typeof message != "undefined"?message:null %>
+                </p>
+                <button type="submit" class="submit">Sign in</button>
+                <p class="signup-link">
+                  No account?
+                  <a href="/designer/registerForm">Sign up</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('modules/footer.ejs') %>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

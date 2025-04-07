@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DesignProfile</title>
+    <link rel="stylesheet" href="/stylesheets/designProfileUser.css" />
+    <%- include('modules/links.ejs') %>
+  </head>
+  <body>
+    <%- include('modules/navbar.ejs') %>
+    <main>
+      <section class="section-1 py-5">
+        <div class="container-xxl py-5">
+          <div class="row designerCard align-items-center">
+            <div class="col-12 col-md-6 col1 g-0">
+              <img
+                src="/images/designs/<%= result.design_img?result.design_img:'default.jpg'%>"
+                class="img-fluid"
+                alt="Imagen del diseño"
+              />
+            </div>
+            <div class="col-12 col-md-6 infoCol">
+              <span class="designerName d-block mb-4">
+                <%= result.design_name %>
+              </span>
+              <span class="designerEmail d-block"
+                ><strong>Orientation: </strong> <%= result.orientation %></span
+              >
+              <span class="designerCity d-block"
+                ><strong>Main fabric: </strong> <%= result.main_fabric %>
+              </span>
+              <span class="designerPhone d-block"
+                ><strong>Main color: </strong> <%= result.main_color %>
+              </span>
+              <span class="designerPhone d-block"
+                ><strong>Garment type: </strong> <%= result.garment_type %>
+              </span>
+              <span class="designerDesc d-block"
+                ><strong>Description: </strong> <%= result.design_description
+                %></span
+              >
+            </div>
+          </div>
+          <div class="text-center">
+            <button
+              class="btn-volver"
+              onclick="window.location.href='/designer/userViewDesigner/ <%= result.designer_id %>'"
+            >
+              Go Designer
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('modules/footer.ejs') %>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
