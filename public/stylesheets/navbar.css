@@ -1,11 +1,9 @@
-/* Color of the links BEFORE scroll */
 .navbar-scroll .nav-link,
 .navbar-scroll .navbar-toggler-icon,
 .navbar-scroll .navbar-brand {
   color: #fff;
 }
 
-/* Color of the links AFTER scroll */
 .navbar-scrolled .nav-link,
 .navbar-scrolled .navbar-toggler-icon,
 .navbar-scrolled .navbar-brand {
@@ -21,13 +19,6 @@
   border-bottom: solid 1px white;
 }
 
-.formnav2 {
-  border-bottom: solid 1px white;
-  background-color: transparent;
-}
-
-
-/* color navbar despues de scroll */
 .navbar-scroll,
 .navbar-scrolled {
   background-color: #cbbcb1;
@@ -35,7 +26,7 @@
 
 .mask-custom {
   backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, .15);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .navbar-brand {

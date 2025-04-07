@@ -3,23 +3,38 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home</title>
+    <title>Register</title>
     <link rel="stylesheet" href="/stylesheets/register.css" />
     <%- include('modules/links.ejs') %>
   </head>
   <body>
     <%- include('modules/navbar.ejs') %>
     <main>
-      <section class="section-1 py-5  d-flex justify-content-center align-items-center align-content-center">
-        <div class="container-xxl  d-flex justify-content-center align-items-center align-content-center">
-          <div class="row  d-flex justify-content-center align-items-center align-content-center">
-            <div class="col-12  d-flex justify-content-center align-items-center align-content-center">
+      <section
+        class="section-1 py-5 d-flex justify-content-center align-items-center align-content-center"
+      >
+        <div
+          class="container-xxl d-flex justify-content-center align-items-center align-content-center"
+        >
+          <div
+            class="row d-flex justify-content-center align-items-center align-content-center"
+          >
+            <div
+              class="col-12 d-flex justify-content-center align-items-center align-content-center"
+            >
               <div class="form-box">
                 <form class="form" action="/designer/register" method="post">
                   <span class="title">Sign up</span>
-                  <span class="subtitle">Create a free account with your email.</span>
+                  <span class="subtitle"
+                    >Create a free account with your email.</span
+                  >
                   <div class="form-container">
-                    <input type="text" class="input" placeholder="Name" name="name" />
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Name"
+                      name="name"
+                    />
                     <input
                       type="text"
                       class="input"
@@ -49,7 +64,7 @@
                 </form>
                 <div class="form-section">
                   <p style="color: red">
-                    <%= typeof message != "undefined"?message:null %>
+                    <strong><%= typeof message != "undefined"?message:null %></strong>
                   </p>
                   <p>
                     Have an account?

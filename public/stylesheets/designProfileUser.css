@@ -9,25 +9,23 @@
   padding: 0;
   overflow: hidden;
   margin: 3rem;
-  box-shadow: 15px 15px 30px #bebebe,
-  -15px -15px 30px #ffffff;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
 }
 
 .col1 {
- text-align: center;
- width: 600px;
- height: 600px;
- margin: 0;
+  text-align: center;
+  width: 600px;
+  height: 600px;
+  margin: 0;
 }
 
 .col1 img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* cover alomejor */
+  object-fit: contain;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-
 
 .infoCol span {
   display: block;
@@ -51,9 +49,9 @@
 }
 
 .btn-volver {
-  background-color: #0a4275; 
+  background-color: #0a4275;
   border: none;
-  border-radius: 30px; 
+  border-radius: 30px;
   padding: 12px 25px;
   font-size: 1rem;
   text-transform: uppercase;
@@ -64,5 +62,5 @@
 
 .btn-volver:hover {
   background-color: #0056b3;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }

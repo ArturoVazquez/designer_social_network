@@ -7,9 +7,8 @@ class DesignController {
   };
 
   createDesign = (req, res) => {
-    // Se obtiene el id del diseñador de la URL
     const { designer_id } = req.params;
-    // Se extraen los datos enviados desde el formulario
+
     const {
       design_name,
       orientation,
@@ -19,7 +18,6 @@ class DesignController {
       design_description,
     } = req.body;
 
-    // Se arma la consulta INSERT con los campos obligatorios y opcionales
     let sql =
       'INSERT INTO design (designer_id, design_name, orientation, main_fabric, main_color, garment_type, design_description) VALUES (?, ?, ?, ?, ?, ?, ?)';
     let values = [
@@ -31,8 +29,6 @@ class DesignController {
       garment_type,
       design_description,
     ];
-
-    // Si se ha subido una imagen, se incluye en el INSERT
     if (req.file) {
       sql =
         'INSERT INTO design (designer_id, design_name, orientation, main_fabric, main_color, garment_type, design_description, design_img) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
@@ -52,7 +48,7 @@ class DesignController {
       if (err) {
         throw err;
       } else {
-        // Redirige al perfil del diseñador para ver el nuevo diseño
+
         res.redirect(`/designer/designerProfile/${designer_id}`);
       }
     });
@@ -85,7 +81,7 @@ class DesignController {
   };
 
   editDesign = (req, res) => {
-    const { id, designer_id } = req.params; 
+    const { id, designer_id } = req.params;
     const {
       design_name,
       orientation,
@@ -169,8 +165,7 @@ class DesignController {
 
   doSearch = (req, res) => {
     const { query } = req.query;
-    console.log(req.query);
-  
+
     const sql = `
       SELECT *
       FROM design
@@ -182,20 +177,17 @@ class DesignController {
           OR garment_type LIKE ?
     `;
 
-    connection.query(sql, [
-      `%${query}%`,
-      `%${query}%`,
-      `%${query}%`,
-      `%${query}%`,
-      `%${query}%`
-    ], (err, results) => {
-      if (err) {
-        throw err;
+    connection.query(
+      sql,
+      [`%${query}%`, `%${query}%`, `%${query}%`, `%${query}%`, `%${query}%`],
+      (err, results) => {
+        if (err) {
+          throw err;
+        }
+        res.render('search', { result: results, query });
       }
-      res.render('search', { result: results, query });
-    });
+    );
   };
-
 }
 
 module.exports = new DesignController();

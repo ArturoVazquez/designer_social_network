@@ -9,16 +9,14 @@
   padding: 0;
   overflow: hidden;
   margin: 3rem;
-/*   background: #e0e0e0; */
-  box-shadow: 15px 15px 30px #bebebe,
-             -15px -15px 30px #ffffff;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
 }
 
 .col1 {
- text-align: center;
- width: 600px;
- height: 600px;
- margin: 0;
+  text-align: center;
+  width: 600px;
+  height: 600px;
+  margin: 0;
 }
 
 .col1 img {
@@ -71,8 +69,7 @@ a.btn {
   height: 300px;
   border-radius: 30px;
   background: #e0e0e0;
-  box-shadow: 15px 15px 30px #bebebe,
-             -15px -15px 30px #ffffff;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
 }
 
 .card:hover {
@@ -88,7 +85,6 @@ a.btn {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
 
 .card-title {
   text-align: center;
@@ -106,13 +102,13 @@ a.btn {
 .card-body {
   padding: 0;
   overflow: hidden;
-  height:30%;
-  }
+  height: 30%;
+}
 
 .btncard {
-  background-color: #0a4275; 
+  background-color: #0a4275;
   border: none;
-  border-radius: 30px; 
+  border-radius: 30px;
   padding: 6px 12px;
   font-size: 1rem;
   text-transform: uppercase;
@@ -122,13 +118,13 @@ a.btn {
 }
 .btncard:hover {
   background-color: #0056b3;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .btn-volver {
-  background-color: #0a4275; 
+  background-color: #0a4275;
   border: none;
-  border-radius: 30px; 
+  border-radius: 30px;
   padding: 12px 25px;
   font-size: 1rem;
   text-transform: uppercase;
@@ -139,11 +135,8 @@ a.btn {
 
 .btn-volver:hover {
   background-color: #0056b3;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
-/* body{
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
-} */
 
 footer {
   margin-top: 4rem;

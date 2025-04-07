@@ -9,15 +9,14 @@
   padding: 0;
   overflow: hidden;
   margin: 3rem;
-  box-shadow: 15px 15px 30px #bebebe,
-  -15px -15px 30px #ffffff;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
 }
 
 .col1 {
- text-align: center;
- width: 600px;
- height: 600px;
- margin: 0;
+  text-align: center;
+  width: 600px;
+  height: 600px;
+  margin: 0;
 }
 
 .col1 img {
@@ -70,8 +69,7 @@ a.btn {
   height: 300px;
   border-radius: 30px;
   background: #e0e0e0;
-  box-shadow: 15px 15px 30px #bebebe,
-             -15px -15px 30px #ffffff;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
 }
 
 .card:hover {
@@ -88,7 +86,6 @@ a.btn {
   letter-spacing: 2px;
 }
 
-
 .card-title {
   text-align: center;
   font-family: 'Playfair Display', serif;
@@ -97,9 +94,9 @@ a.btn {
 }
 
 .btn-volver {
-  background-color: #0a4275; 
+  background-color: #0a4275;
   border: none;
-  border-radius: 30px; 
+  border-radius: 30px;
   padding: 12px 25px;
   font-size: 1rem;
   text-transform: uppercase;
@@ -110,7 +107,7 @@ a.btn {
 
 .btn-volver:hover {
   background-color: #0056b3;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .card img {

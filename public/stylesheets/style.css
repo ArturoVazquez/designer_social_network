@@ -2,14 +2,16 @@
 } */
 
 .section-1 {
-  background-image:/*  linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),  */url(/images/balancing-1868051.jpg);
+  background-image: url(/images/balancing-1868051.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
-.tit1, .tit2, .tit3 {
+.tit1,
+.tit2,
+.tit3 {
   font-size: 3.5rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -20,12 +22,11 @@
 }
 
 .tit2 {
- color: #0a4275;
+  color: #0a4275;
 }
 
 .tit3 {
   color: white;
-  
 }
 
 .tit1 {
@@ -37,7 +38,6 @@
 }
 
 @media (max-width: 768px) {
-
   .tit1 {
     transform: translateY(-60px) translateX(140px);
   }
@@ -48,7 +48,6 @@
 }
 
 .section-2 {
-
   video {
     display: block;
     width: 100%;
@@ -65,25 +64,23 @@
 }
 
 .spansec3 {
-  color: white; 
-  font-size: 4rem; 
+  color: white;
+  font-size: 4rem;
   font-weight: 700;
-  letter-spacing: 0.05em; 
-  display: block; 
-  margin-bottom: 0.5rem; 
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .span2sec3 {
   color: white;
-  font-size: 2rem; 
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   display: block;
 }
 
 @media (max-width: 768px) {
-
-
   .spansec3 {
     font-size: 2.5rem;
   }

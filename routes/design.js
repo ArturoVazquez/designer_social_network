@@ -3,7 +3,7 @@ const router = express.Router();
 const designController = require('../controllers/designController');
 const uploadFile = require('../middleware/uploadFile');
 
-/* GET users listing. */
+
 router.get('/designForm/:designer_id', designController.showFormCreateDesign);
 router.post('/createDesign/:designer_id', uploadFile("designs"), designController.createDesign);
 router.get('/designProfile/:id', designController.profile);

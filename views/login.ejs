@@ -10,11 +10,21 @@
   <body>
     <%- include('modules/navbar.ejs') %>
     <main>
-      <section class="section-1 py-5 d-flex justify-content-center align-items-center align-content-center">
+      <section
+        class="section-1 py-5 d-flex justify-content-center align-items-center align-content-center"
+      >
         <div class="container-xxl py-5">
-          <div class="row d-flex justify-content-center align-items-center align-content-center">
-            <div class="col-12 d-flex justify-content-center align-items-center align-content-center">
-              <form class="form d-flex flex-column align-content-center align-items-center" action="/designer/login" method="post">
+          <div
+            class="row d-flex justify-content-center align-items-center align-content-center"
+          >
+            <div
+              class="col-12 d-flex justify-content-center align-items-center align-content-center"
+            >
+              <form
+                class="form d-flex flex-column align-content-center align-items-center"
+                action="/designer/login"
+                method="post"
+              >
                 <p class="form-title">Sign in to your account</p>
                 <div class="input-container">
                   <input type="email" placeholder="Enter email" name="email" />
@@ -28,7 +38,7 @@
                   />
                 </div>
                 <p style="color: red">
-                  <%= typeof message != "undefined"?message:null %>
+                  <strong><%= typeof message != "undefined"?message:null %></strong>
                 </p>
                 <button type="submit" class="submit">Sign in</button>
                 <p class="signup-link">

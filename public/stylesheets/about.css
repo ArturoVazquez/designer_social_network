@@ -1,4 +1,3 @@
-
 .section-1 h1 {
   text-align: center;
   font-family: 'Playfair Display', serif;
@@ -9,17 +8,16 @@
   letter-spacing: 2px;
 }
 
-.section-1{
+.section-1 {
   min-height: 100vh;
 }
-
 
 .col1 {
   text-align: center;
   width: 600px;
   height: 600px;
   margin: 0;
- }
+}
 
 .col1 img {
   width: 100%;

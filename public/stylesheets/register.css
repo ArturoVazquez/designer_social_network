@@ -1,7 +1,7 @@
 .form-box {
-  max-width: 300px; /* maximo ancho */
+  max-width: 300px;
   background: #f1f7fe;
-  overflow: hidden; /* ocultar contenido que s esalga del borde */
+  overflow: hidden;
   border-radius: 16px;
   color: #010101;
 }
@@ -15,7 +15,6 @@
   text-align: center;
 }
 
-
 .title {
   font-weight: bold;
   font-size: 1.6rem;
@@ -26,12 +25,11 @@
   color: #666;
 }
 
-/* agrupo los inputs con un fondo blanco y bordes redondeados */
-.form-container {  
+.form-container {
   overflow: hidden;
   border-radius: 8px;
   background-color: #fff;
-  margin: 1rem 0 .5rem;
+  margin: 1rem 0 0.5rem;
   width: 100%;
 }
 
@@ -42,21 +40,21 @@
   height: 40px;
   width: 100%;
   border-bottom: 1px solid #eee;
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding: 8px 15px;
 }
-/* fondo azul claro y un poco de sombra en la parte superior */
+
 .form-section {
   padding: 16px;
-  font-size: .85rem;
+  font-size: 0.85rem;
   background-color: #e0ecfb;
   box-shadow: rgb(0 0 0 / 8%) 0 -1px;
 }
-/* estilo login azul fuerte y oscurecer al pasar el raton */
+
 .form-section a {
   font-weight: bold;
   color: #0066ff;
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 }
 
 .form-section a:hover {
@@ -64,7 +62,6 @@
   text-decoration: underline;
 }
 
-/*boton redondeado azul con texto blanco y se oscurece al pasar el raton*/
 .form button {
   background-color: #0066ff;
   color: #fff;
@@ -74,7 +71,7 @@
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .form button:hover {
