@@ -13,7 +13,7 @@ const uploadFile = (folder) => {
 
   const upload = multer({storage: storage}).single("img");
   return upload;
-  // por que en el metodo single de multer aparece img? pregunta proyecto mitad bootcamp sobre codigo
+
 }
 
 module.exports = uploadFile;

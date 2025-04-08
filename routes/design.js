@@ -7,7 +7,7 @@ const uploadFile = require('../middleware/uploadFile');
 router.get('/designForm/:designer_id', designController.showFormCreateDesign);
 router.post('/createDesign/:designer_id', uploadFile("designs"), designController.createDesign);
 router.get('/designProfile/:id', designController.profile);
-router.get('/editDesign/:id', designController.showEditFilm);
+router.get('/editDesign/:id', designController.showEditDesign);
 router.post('/editDesigns/:id/:designer_id',uploadFile("designs"), designController.editDesign);
 router.get('/delTotalDesign/:id/:designer_id', designController.delTotalDesign);
 router.get('/allDesigns', designController.allDesigns);

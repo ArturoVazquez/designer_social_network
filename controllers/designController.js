@@ -74,7 +74,7 @@ class DesignController {
     });
   };
 
-  showEditFilm = (req, res) => {
+  showEditDesign = (req, res) => {
     const { id } = req.params;
     let sql =
       ' SELECT * FROM design where design_id = ? and design_is_deleted = 0';
