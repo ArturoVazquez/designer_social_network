@@ -30,6 +30,7 @@
                       name="design_name"
                       id="design_name"
                       value="<%= result.design_name  %>"
+                      required
                     />
                   </div>
                   <div class="form_group">
@@ -41,6 +42,7 @@
                       type="text"
                       name="orientation"
                       value="<%= result.orientation  %>"
+                      required
                     />
                   </div>
                   <div class="form_group">
@@ -99,6 +101,9 @@
                 </div>
               </div>
             </div>
+            <p style="color: red">
+              <strong><%= typeof message != "undefined"?message:null %></strong>
+            </p>
             <p>
               Do you want to cancel?
               <a

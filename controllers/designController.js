@@ -18,6 +18,13 @@ class DesignController {
       design_description,
     } = req.body;
 
+    if (!design_name || !orientation) {
+      return res.render("designForm", {
+        designer_id,
+        message: "The 'Design Name' and 'Orientation' fields are required."
+      });
+    }
+
     let sql =
       'INSERT INTO design (designer_id, design_name, orientation, main_fabric, main_color, garment_type, design_description) VALUES (?, ?, ?, ?, ?, ?, ?)';
     let values = [
@@ -90,6 +97,22 @@ class DesignController {
       garment_type,
       design_description,
     } = req.body;
+
+    if (!design_name || !orientation) {
+      return res.render("formEditDesign", {
+        result: { 
+          design_id: id,
+          design_name,
+          orientation,
+          main_fabric,
+          main_color,
+          garment_type,
+          design_description,
+          designer_id,
+        },
+        message: "The 'Design Name' and 'Orientation' fields are required."
+      });
+    }
 
     let sql =
       'UPDATE design SET design_name = ?, orientation = ?, main_fabric = ?, main_color = ?, garment_type = ?, design_description = ? WHERE design_id = ?';

@@ -17,7 +17,7 @@
 .formnav {
   background-color: transparent;
   border: solid 0.5px black;
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
 }
 
 @media (max-width: 768px) {
