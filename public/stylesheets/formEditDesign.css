@@ -1,6 +1,10 @@
 main {
   margin-top: 5rem;
   min-height: calc(100vh - 214px);
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/designForm.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .form_area {
@@ -8,12 +12,11 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color:#e0e0e0;
+  background-color: rgba(255, 255, 255, 0.7);
   height: auto;
   width: auto;
   border: 2px solid #264143;
   border-radius: 20px;
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
 }
 
 .title {
