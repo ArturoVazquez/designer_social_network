@@ -8,8 +8,10 @@
   letter-spacing: 2px;
 }
 
-.section-1 {
+body {
+  display: grid;
   min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
 
 .col1 {

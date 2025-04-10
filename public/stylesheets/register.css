@@ -80,5 +80,7 @@
 
 .section-1 {
   height: 100vh;
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  background-image: url(/images/register.jpg);
+  background-size: cover;
+  background-position: center;
 }
