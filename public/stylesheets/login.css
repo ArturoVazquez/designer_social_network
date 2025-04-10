@@ -66,9 +66,20 @@
   text-decoration: underline;
 }
 
-.section-1 {
+body {
   background-image: url(/images/login.jpg);
   background-size: cover;
   background-position: bottom;
-  height: 100vh;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
+
+main {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
