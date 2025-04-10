@@ -1,10 +1,19 @@
-main {
-  margin-top: 5rem;
-  min-height: calc(100vh - 214px);
+body {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/designForm.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+main {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
 
 .form_area {
@@ -17,6 +26,8 @@ main {
   width: auto;
   border: 2px solid #264143;
   border-radius: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .title {
