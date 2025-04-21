@@ -42,19 +42,19 @@ Una red social pensada para diseñadores, donde los usuarios pueden registrarse,
 ## 🖼️ Capturas de pantalla
 
 ### Pantalla de login  
-![Login](./assets/login.png)
+![Login](./public/assets/login.png)
 
 ### Registro de diseñador  
-![Registro](./assets/register.png)
+![Registro](./public/assets/register.png)
 
 ### Feed de diseños publicados  
-![Feed](./assets/feed.png)
+![Feed](./public/assets/feed.png)
 
 ### Perfil de diseñador  
-![Perfil](./assets/profile.png)
+![Perfil](./public/assets/profile.png)
 
 ### Formulario para publicar un diseño  
-![Publicar diseño](./assets/new_design.png)
+![Publicar diseño](./public/assets/new_design.png)
 
 ---
 
