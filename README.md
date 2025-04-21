@@ -41,6 +41,9 @@ Una red social pensada para diseñadores, donde los usuarios pueden registrarse,
 
 ## 🖼️ Capturas de pantalla
 
+### Página principal 
+![Perfil](./public/assets/home.png)
+
 ### Pantalla de login  
 ![Login](./public/assets/login.png)
 
@@ -48,13 +51,19 @@ Una red social pensada para diseñadores, donde los usuarios pueden registrarse,
 ![Registro](./public/assets/register.png)
 
 ### Feed de diseños publicados  
-![Feed](./public/assets/feed.png)
+![Feed](./public/assets/list.png)
+
+### Formulario para publicar un diseño  
+![Publicar diseño](./public/assets/add.png)
 
 ### Perfil de diseñador  
 ![Perfil](./public/assets/profile.png)
 
-### Formulario para publicar un diseño  
-![Publicar diseño](./public/assets/new_design.png)
+### Información diseños  
+![Perfil](./public/assets/designinfo.png)
+
+### Responsive
+![Perfil](./public/assets/responsive.png)
 
 ---
 
@@ -172,7 +181,6 @@ designer_social_network/
 - Validaciones más robustas
 - Roles de usuario (admin, diseñador)
 - Subida segura con validación MIME
-- Diseño responsive
 
 ---
 
