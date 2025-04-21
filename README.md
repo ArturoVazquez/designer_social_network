@@ -63,7 +63,7 @@ Una red social pensada para diseñadores, donde los usuarios pueden registrarse,
 ![Perfil](./public/assets/designinfo.png)
 
 ### Responsive
-![Perfil](./public/assets/responsive.png)
+![Perfil](./public/assets/reponsive.png)
 
 ---
 
