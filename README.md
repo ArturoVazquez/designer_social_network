@@ -36,8 +36,24 @@ Una red social pensada para diseñadores, donde los usuarios pueden registrarse,
 - Relación 1:N entre diseñadores y sus diseños
 - Eliminación lógica (`is_deleted`)
 - Vistas dinámicas con EJS
+- 📱 Diseño responsive adaptado a móviles y tablets
 
 ---
+
+## 🧠 Aprendizajes aplicados
+Separación de responsabilidades entre vistas (EJS), estilos (CSS) y lógica (Node.js)
+
+Uso de EJS para renderizado dinámico del frontend
+
+Arquitectura modular con Express y rutas independientes
+
+Integración de base de datos relacional (MySQL)
+
+Manejo de sesiones, cookies y cifrado de contraseñas
+
+Subida de imágenes y tratamiento de archivos
+
+✅ Diseño web responsive con CSS (flexible en diferentes tamaños de pantalla)
 
 ## 🖼️ Capturas de pantalla
 
