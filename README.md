@@ -137,7 +137,10 @@ const connection = mysql.createConnection({
 module.exports = connection;
 ```
 
-Asegúrate de importar el archivo SQL incluido en `/sql` o usar el esquema más arriba.
+### 📥 Script SQL
+
+Puedes encontrar el script de creación de la base de datos aquí:  
+[`/sql/designer_social_network.sql`](./sql/designer_social_network.sql)
 
 ---
 
