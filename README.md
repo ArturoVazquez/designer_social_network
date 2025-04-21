@@ -195,7 +195,7 @@ designer_social_network/
 
 🟡 Proyecto en desarrollo con funcionalidades principales implementadas.
 
-### Próximas mejoras sugeridas:
+### Próximas mejoras:
 - Sistema de comentarios y "me gusta"
 - Validaciones más robustas
 - Roles de usuario (admin, diseñador)
