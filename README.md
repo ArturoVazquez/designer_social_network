@@ -41,19 +41,19 @@ Una red social pensada para diseñadores, donde los usuarios pueden registrarse,
 ---
 
 ## 🧠 Aprendizajes aplicados
-Separación de responsabilidades entre vistas (EJS), estilos (CSS) y lógica (Node.js)
+- Separación de responsabilidades entre vistas (EJS), estilos (CSS) y lógica (Node.js)
 
-Uso de EJS para renderizado dinámico del frontend
+- Uso de EJS para renderizado dinámico del frontend
 
-Arquitectura modular con Express y rutas independientes
+- Arquitectura modular con Express y rutas independientes
 
-Integración de base de datos relacional (MySQL)
+- Integración de base de datos relacional (MySQL)
 
-Manejo de sesiones, cookies y cifrado de contraseñas
+- Manejo de sesiones, cookies y cifrado de contraseñas
 
-Subida de imágenes y tratamiento de archivos
+- Subida de imágenes y tratamiento de archivos
 
-✅ Diseño web responsive con CSS (flexible en diferentes tamaños de pantalla)
+- ✅ Diseño web responsive con CSS (flexible en diferentes tamaños de pantalla)
 
 ## 🖼️ Capturas de pantalla
 
