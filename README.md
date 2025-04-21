@@ -57,7 +57,7 @@ Una red social pensada para diseñadores, donde los usuarios pueden registrarse,
 ![Publicar diseño](./public/assets/add.png)
 
 ### Perfil de diseñador  
-![Perfil](./public/assets/profile.png)
+![Perfil](./public/assets/design.png)
 
 ### Información diseños  
 ![Perfil](./public/assets/designinfo.png)
