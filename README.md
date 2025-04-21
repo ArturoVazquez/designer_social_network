@@ -148,7 +148,7 @@ Puedes encontrar el script de creación de la base de datos aquí:
 
 ```
 designer_social_network/
-├── assets/               # Capturas para README
+├── assets/              
 ├── bin/
 │   └── www
 ├── config/
