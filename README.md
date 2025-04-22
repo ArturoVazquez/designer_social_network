@@ -23,7 +23,7 @@ Una red social pensada para diseñadores, donde los usuarios pueden registrarse,
 - Morgan, Debug, Cookie-Parser, Http-Errors
 
 ### Frontend:
-- HTML5, CSS3, JavaScript
+- HTML5, CSS3, Bootstrap, JavaScript
 
 ---
 
